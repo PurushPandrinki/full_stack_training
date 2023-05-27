@@ -1,0 +1,113 @@
+
+<!-- saved from url=(0031)http://127.0.0.1:5500/Day1.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>
+        form demo
+    </title>
+ </head>
+ <body>
+    <form>
+        <style>h1{color:red}
+        </style>
+        <h1>Personal information</h1>
+        <label>First name</label>
+        <input type="text">
+        <br>
+        <label>Last name</label>
+        <input type="text">
+        <br>
+        <label>email</label>
+        <input type="email">
+        <br>
+        <label>Gender</label>
+        <select>
+            <option>Male</option>
+            <option>Female</option>
+        </select>
+        <br>
+        <label>Contact</label>
+        <input type="number">
+        <br>
+        <label>City</label>
+        <select>
+            <option>hyd</option>
+            <option>Pune</option>
+            <option>Blr</option>
+        </select>
+        <style>h2{color:red}
+        </style>
+        <h2>Education Qulification</h2>
+        
+        <label>degree</label>
+        <select>
+            <option>B.sc</option>
+            <option>B.com</option>
+            <option>B.B.A</option>
+        </select>
+        <br>
+        <label>B.tech</label>
+        <select>
+            <option>C.S.E</option>
+            <option>E.C.E</option>
+            <option>Mech</option>
+        </select>
+        <br>
+        <style>h3{color:red}
+        </style>
+        <h3>Hobbies</h3>
+        <label>Playing Games</label>
+        <input type="radio">
+        <label>Reading books</label>
+        <input type="radio">
+        <br>
+        <label>Adress</label>
+        <textarea rows="" "3"="" cols="" "10"=""></textarea>
+        <br>
+        <label>Upload file</label>
+        <input type="file">
+        <br>
+        <label>Submit</label>
+        <input type="submit">
+        <label>Reset</label>
+        <input type="Reset">
+    </form>
+ <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+ </body></html>
